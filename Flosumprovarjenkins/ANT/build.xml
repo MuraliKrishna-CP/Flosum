@@ -34,6 +34,7 @@
 				testEnvironmentSecretsPassword="${testenvironment.secretspassword}"
 				sendEmail="NO"
 				invokeTestRunMonitor="true"
+	            licensePath="${env.LICENSE_PATH}"
 				>
 		
 			<fileset dir="${testproject.home}/plans/${env.TEST_PLAN}"></fileset>
