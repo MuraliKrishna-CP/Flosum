@@ -1,6 +1,6 @@
 <project default="runtests">
     <property environment="env"/>
-    <property name="provar.home" value="/var/lib/jenkins/provar-libs"/>
+    <property name="provar.home" value="/var/lib/jenkins/provar-libs/plugins"/>
     <property name="testproject.home" value=".."/>
     <property name="testproject.results" value="${testproject.home}/ANT/Results"/>
     <property name="secrets.password" value="${env.ProvarSecretsPassword}"/>
