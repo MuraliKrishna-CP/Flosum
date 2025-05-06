@@ -8,10 +8,27 @@
   <sourcePath>src</sourcePath>
   <secureStoragePath>.secrets</secureStoragePath>
   <browserDebugPort>0</browserDebugPort>
+  <variables>
+    <testVariable name="_chromeOptions">
+      <valueType class="textType">
+        <constraints>
+          <valueConstraint name="minLength">0</valueConstraint>
+          <valueConstraint name="maxLength">9999</valueConstraint>
+        </constraints>
+      </valueType>
+      <summary/>
+      <values>
+        <testVariableValue>
+          <value class="value" valueClass="string">--no-sandbox,--disable-dev-shm-usage</value>
+        </testVariableValue>
+      </values>
+    </testVariable>
+  </variables>
   <connectionClasses>
     <connectionClass name="sf">
       <connections>
         <connection id="6c992c41-d0eb-4b13-8b80-674b7aa5e702" name="Flosumprovarjenkins">
+          <summary/>
           <connectionUrls>
             <connectionUrl secureStorageNodeId="5fe29637-91b3-410d-81e1-d65bdbdf6356" url="sf:user=cpadmin@cloudperitus.com.flosumqa;password={password};securityToken={securityToken};environment=SANDBOX;lightningMode=true"/>
           </connectionUrls>
