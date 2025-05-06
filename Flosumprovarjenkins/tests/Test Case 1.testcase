@@ -47,9 +47,7 @@
       </arguments>
     </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="b85acf1e-090b-4c21-a08f-d8bfea105890" name="UiWithScreen" testItemId="2" title="On MyPageObject page">
-      <tags>
-        <string>disabled</string>
-      </tags>
+      <tags/>
       <arguments>
         <argument id="uiConnectionName">
           <value class="value" valueClass="string">ApexConnection</value>
