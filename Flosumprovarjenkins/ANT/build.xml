@@ -1,7 +1,7 @@
 <project default="runtests">
 	<property name="version" value="2.320.8.0"/>
 	<property environment="env"/>
-	<property name="provar.home" value="${env.PROVAR_HOME}"/>
+	<property name="provar.home" value="/var/lib/jenkins/provar-libs/"/>
 	<property name="testproject.home" value=".."/>
 	<property name="testproject.results" value="${testproject.home}/ANT/Results"/>
 
@@ -31,7 +31,7 @@
 			    testEnvironmentSecretsPassword="${testenvironment.secretspassword}"
 				sendEmail ="NO"
 				invokeTestRunMonitor="true"
-				licensePath="/var/lib/jenkins/Provar/.licenses"
+				licensePath="/var/lib/jenkins/Provar/.licenses/provar-license-key.key"
 		>
 			<fileset id="testplan" dir="${testproject.home}/plans/${env.TEST_PLAN}"></fileset>
 			<planFeature name="PDF" type="OUTPUT" enabled="true"/>
