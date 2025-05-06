@@ -35,6 +35,15 @@
         </connection>
       </connections>
     </connectionClass>
+    <connectionClass name="ui">
+      <connections>
+        <connection id="fb865b0d-d60c-45ca-8532-336381b819f7" name="google">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="b4f26bef-0b3d-4e53-8bcf-d02faf623d7d" url="se:baseUrl=https://www.google.com"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
   </connectionClasses>
   <browserConfigurations>
     <browserConfiguration adjustBrowserWidthForChromeIde="true" browserHeight="0" browserWidth="0" name="Full Screen">

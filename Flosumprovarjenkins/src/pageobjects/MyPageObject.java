@@ -17,5 +17,8 @@ public class MyPageObject {
 	@LinkType()
 	@FindBy(xpath = "//a[normalize-space(.)='Accounts']")
 	public WebElement accounts;
+	@LinkType()
+	@FindBy(xpath = "//a[normalize-space(.)='Gmail']")
+	public WebElement gmail;
 			
 }
