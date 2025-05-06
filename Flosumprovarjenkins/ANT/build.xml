@@ -39,7 +39,7 @@
             testEnvironmentSecretsPassword="${testenvironment.secretspassword}"
             sendEmail="NO"
             invokeTestRunMonitor="true"
-            licensePath="${env.LICENSE_PATH}">
+            licensePath="/var/lib/jenkins/Provar/.licenses/provar-license-key.key">
             
             <fileset dir="${testproject.home}/plans/${env.TEST_PLAN}"/>
             
