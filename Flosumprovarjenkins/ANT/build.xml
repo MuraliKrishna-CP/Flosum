@@ -1,7 +1,7 @@
 <project default="runtests">
 	<property name="version" value="2.320.8.0"/>
 	<property environment="env"/>
-	<property name="provar.home" value="/var/lib/jenkins/provar-libs/"/>
+	<property name="provar.home" value="${env.PROVAR_HOME}"/>
 	<property name="testproject.home" value=".."/>
 	<property name="testproject.results" value="${testproject.home}/ANT/Results"/>
 
