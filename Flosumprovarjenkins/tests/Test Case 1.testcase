@@ -20,7 +20,9 @@
         <argument id="alreadyOpenBehaviour">
           <value class="value" valueClass="string">Fail</value>
         </argument>
-        <argument id="uiApplicationName"/>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">LightningSales</value>
+        </argument>
         <argument id="closeAllPrimaryTabs">
           <value class="value" valueClass="boolean">true</value>
         </argument>
@@ -45,6 +47,9 @@
       </arguments>
     </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="b85acf1e-090b-4c21-a08f-d8bfea105890" name="UiWithScreen" testItemId="2" title="On MyPageObject page">
+      <tags>
+        <string>disabled</string>
+      </tags>
       <arguments>
         <argument id="uiConnectionName">
           <value class="value" valueClass="string">ApexConnection</value>
@@ -106,12 +111,26 @@
                 <argument id="interactionDescription">
                   <value class="value" valueClass="string">Click the Accounts</value>
                 </argument>
+                <argument id="ieClickMethod">
+                  <value class="value" valueClass="string">Default</value>
+                </argument>
               </arguments>
               <generatedParameters>
-                <apiParam group="value" name="hover" title="Hover before Clicking">
+                <apiParam group="value" name="hover" seq="10000" title="Hover before Clicking">
                   <summary>Whether the mouse should hover over the field before it is clicked.</summary>
                   <type>
                     <booleanType/>
+                  </type>
+                </apiParam>
+                <apiParam group="value" name="ieClickMethod" seq="10001" title="IE Click Method">
+                  <summary>How the click should be executed for Internet Explorer.</summary>
+                  <type>
+                    <choiceType>
+                      <constraints>
+                        <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                        <valueConstraint name="valuesSourceDependencies">com.provar.core.model.ui.api.ClickMethod</valueConstraint>
+                      </constraints>
+                    </choiceType>
                   </type>
                 </apiParam>
               </generatedParameters>
@@ -136,7 +155,7 @@
           <value class="uiTarget" uri="sf:ui:target?object=Account&amp;action=ObjectHome"/>
         </argument>
         <argument id="navigate">
-          <value class="value" valueClass="string">Dont</value>
+          <value class="value" valueClass="string">Always</value>
         </argument>
         <argument id="targetDescription">
           <value class="value" valueClass="string">On SF Account Home screen</value>
