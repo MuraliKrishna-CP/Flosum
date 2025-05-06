@@ -48,8 +48,7 @@
                 primaryRecipients="" 
                 ccRecipients="" 
                 bccRecipients="" 
-                emailSubject="Provar test run report" 
-                attachExecution="false"/>
+                emailSubject="Provar test run report"/>
         </Run-Test-Case>
     </target>
 </project>
