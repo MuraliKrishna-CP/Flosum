@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testPlanInstance guid="edca314c-1cd7-4a0c-a15b-45135b634a4e" testCaseId="1431851a-306a-478a-85f1-da4fde20d469" testCasePath="tests/Account Status Automation.testcase">
+<testPlanInstance guid="1abf8d08-ac3e-4fd6-a897-5358e17d17d3" testCaseId="1431851a-306a-478a-85f1-da4fde20d469" testCasePath="tests/Account Status Automation.testcase">
   <planSettings/>
   <planFeatures/>
 </testPlanInstance>
