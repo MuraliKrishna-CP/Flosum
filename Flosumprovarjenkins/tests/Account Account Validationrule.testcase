@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase guid="062e3852-9789-4b3e-9ae6-4ba3a9195432" id="1">
+<testCase guid="062e3852-9789-4b3e-9ae6-4ba3a9195432" id="5">
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="71856ea8-5fca-4655-a4a1-fb9c78093cce" name="ApexConnect" testItemId="1" title="Salesforce Connect: ApexConnection (Test)">
@@ -27,7 +27,7 @@
           <value class="value" valueClass="boolean">true</value>
         </argument>
         <argument id="quickUiLogin">
-          <value class="value" valueClass="boolean">false</value>
+          <value class="value" valueClass="boolean">true</value>
         </argument>
         <argument id="privateBrowsingMode"/>
         <argument id="enableObjectIdLogging">
@@ -79,10 +79,10 @@
       <clauses>
         <clause name="substeps" testItemId="3">
           <steps>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="a37d3d54-5f7b-4a30-b2e1-867d4f5ad96f" name="UiDoAction" testItemId="4" title="Click the Accounts">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="a37d3d54-5f7b-4a30-b2e1-867d4f5ad96f" name="UiDoAction" testItemId="4" title="Click the Accounts Tab">
               <arguments>
                 <argument id="locator">
-                  <value class="uiLocator" uri="ui:pageobject:field?field=accounts&amp;pageId=pageobjects.MyPageObject"/>
+                  <value class="uiLocator" uri="ui:pageobject:field?field=AccountsTab&amp;pageId=pageobjects.MyPageObject"/>
                 </argument>
                 <argument id="interaction">
                   <value class="uiInteraction" uri="ui:interaction?name=action"/>
@@ -107,7 +107,7 @@
                 </argument>
                 <argument id="locatorParams"/>
                 <argument id="interactionDescription">
-                  <value class="value" valueClass="string">Click the Accounts</value>
+                  <value class="value" valueClass="string">Click the Accounts Tab</value>
                 </argument>
                 <argument id="ieClickMethod">
                   <value class="value" valueClass="string">Default</value>

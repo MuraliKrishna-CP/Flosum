@@ -37,5 +37,8 @@ public class MyPageObject {
     public WebElement Industry;
     @ButtonType()
     @FindBy(xpath = "//div[contains(@class, 'active') and contains(@class, 'open')]//button[normalize-space(.)='Save']")
-    public WebElement SaveButton;			
+    public WebElement SaveButton;
+	@LinkType()
+	@FindBy(xpath = "//table/tbody/tr[1]/th//a")
+	public WebElement FirstAccountRecord;			
 }
