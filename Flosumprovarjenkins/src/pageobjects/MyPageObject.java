@@ -41,8 +41,20 @@ public class MyPageObject {
 	@LinkType()
 	@FindBy(xpath = "//table/tbody/tr[1]/th//a")
 	public WebElement FirstAccountRecord;	
-	@ChoiceListType()
-	@FindBy(xpath = "//label[contains(normalize-space(), 'Account Status')]/following-sibling::div//lightning-base-combobox//input")
-	public WebElement AccountStatus;
+	@ButtonType()
+	@FindBy(xpath = "//button[@name='Edit']")
+	public WebElement Edit;
+	@TextType()
+	@FindBy(xpath = "//button[@aria-label='Account Status']")
+	public WebElement Account_Status__c;
+	@TextType()
+	@FindBy(xpath = "//span[text()='Closed DateTime']/following::lightning-formatted-text[1]")
+	public WebElement closedDateTime;
+	@LinkType()
+	@FindBy(xpath = "(//a[contains(@title, 'Account Marked for Closed')])[1]")
+	public WebElement Task;
+	@TextType()
+	@FindBy(xpath = "//div[contains(@class,'active') and contains(@class,'oneContent')]//span/span[normalize-space(.)='\"Account Marked for Closed\"']")
+	public WebElement Subject;
 			
 }
