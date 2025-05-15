@@ -40,5 +40,9 @@ public class MyPageObject {
     public WebElement SaveButton;
 	@LinkType()
 	@FindBy(xpath = "//table/tbody/tr[1]/th//a")
-	public WebElement FirstAccountRecord;			
+	public WebElement FirstAccountRecord;	
+	@ChoiceListType()
+	@FindBy(xpath = "//label[normalize-space()='Account Status']/following-sibling::div//lightning-base-combobox//input")
+	public WebElement AccountStatus;
+			
 }

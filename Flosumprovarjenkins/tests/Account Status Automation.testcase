@@ -261,12 +261,26 @@
                 <argument id="interactionDescription">
                   <value class="value" valueClass="string">Click the Edit button</value>
                 </argument>
+                <argument id="ieClickMethod">
+                  <value class="value" valueClass="string">Default</value>
+                </argument>
               </arguments>
               <generatedParameters>
-                <apiParam group="value" name="hover" title="Hover before Clicking">
+                <apiParam group="value" name="hover" seq="10000" title="Hover before Clicking">
                   <summary>Whether the mouse should hover over the field before it is clicked.</summary>
                   <type>
                     <booleanType/>
+                  </type>
+                </apiParam>
+                <apiParam group="value" name="ieClickMethod" seq="10001" title="IE Click Method">
+                  <summary>How the click should be executed for Internet Explorer.</summary>
+                  <type>
+                    <choiceType>
+                      <constraints>
+                        <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                        <valueConstraint name="valuesSourceDependencies">com.provar.core.model.ui.api.ClickMethod</valueConstraint>
+                      </constraints>
+                    </choiceType>
                   </type>
                 </apiParam>
               </generatedParameters>
@@ -355,19 +369,23 @@
                 </argument>
               </arguments>
               <generatedParameters>
-                <apiParam group="value" name="value" passwordVariableAllowed="true" title="Value">
+                <apiParam group="value" modelBinding="sf:ui:binding:object?field=Account_Status__c&amp;object=Account" name="value" passwordVariableAllowed="true" seq="10000" title="Value">
                   <summary>The value to be populated.</summary>
                   <type>
-                    <textType/>
+                    <choiceType>
+                      <constraints>
+                        <valueConstraint name="boundedValues">Active:Active|Holding:Holding|Closed:Closed</valueConstraint>
+                      </constraints>
+                    </choiceType>
                   </type>
                 </apiParam>
-                <apiParam group="value" name="blur" title="Tab off field">
+                <apiParam group="value" name="blur" seq="10001" title="Tab off field">
                   <summary>Whether the tab key should be pressed after the value is populated.</summary>
                   <type>
                     <booleanType/>
                   </type>
                 </apiParam>
-                <apiParam group="value" name="pressEnter" title="Press Enter">
+                <apiParam group="value" name="pressEnter" seq="10002" title="Press Enter">
                   <summary>Whether the Enter key should be pressed after the value is populated.</summary>
                   <type>
                     <booleanType/>
